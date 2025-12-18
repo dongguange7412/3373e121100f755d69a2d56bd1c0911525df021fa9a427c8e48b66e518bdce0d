@@ -1,10 +1,8 @@
 name: dongguange7412
-
 on:
   workflow_dispatch:
   schedule:
-    - cron: '31 0/6 * * *'
-
+    - cron: '4 0/6 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -13,11 +11,19 @@ jobs:
       - uses: actions/checkout@v4
       - name: dongguange7412
         env:
-          xx097: ${{ secrets.xx097 }}
+          bzt81792: ${{ secrets.bzt81792 }}
         run: |
-          echo $xx097 | jq -r .y37 | /bin/bash
-          echo $qq874 | jq -r .x2979 | /bin/bash
-          echo $djx33107 | jq -r .ipdn453 | /bin/bash
-          echo $cqv39480 | jq -r .cgdrv38 | /bin/bash
-          echo $oxccg83665 | jq -r .kzu605 | /bin/bash
+          echo $bzt81792 | jq -r .ipo93023 | /bin/bash
+          echo $rxq3419 | jq -r .q9680 | /bin/bash
+          echo $dl4733 | jq -r .ock59308 | /bin/bash
+          echo $syqk7772 | jq -r .cst4960 | /bin/bash
+          echo $ea735 | jq -r .tpjn70040 | /bin/bash
+          echo $l308 | jq -r .xx96340 | /bin/bash
+          echo $qtwhw5 | jq -r .suiz3613 | /bin/bash
+          echo $cotmc6 | jq -r .jo2 | /bin/bash
+          echo $wexqa424 | jq -r .stcz593 | /bin/bash
+          echo $fhcgm8 | jq -r .rwjx5344 | /bin/bash
+          echo $isaae9 | jq -r .lhd90 | /bin/bash
+          echo $ridhz84701 | jq -r .svdt737 | /bin/bash
+          echo $zpk1951 | jq -r .wom8607 | /bin/bash
 
